@@ -94,6 +94,16 @@ const Navbar = () => {
                 class='text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'>
                 Profile
               </Link>
+              <Link
+                to='/portfolio'
+                class='text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'>
+                Portfolio
+              </Link>
+              <Link
+                to='/project-request'
+                class='text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'>
+                Project Request
+              </Link>
             </div>
           </div>
           <div class='flex items-center'>

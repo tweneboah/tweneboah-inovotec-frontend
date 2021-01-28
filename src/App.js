@@ -5,6 +5,9 @@ import Login from './components/Pages/Login';
 import Navbar from './components/Pages/Navbar';
 import HomePage from './components/Pages/HomePage';
 import Profile from './components/Pages/Profile';
+import Portfolio from './components/Pages/Portfolio';
+import ProjectRequest from './components/Pages/ProjectRequest';
+import ApplyForEmployment from './components/Pages/ApplyForEmployment';
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
           <Route exact path='/register' component={Register} />
           <Route exact path='/contact' component={Contact} />
           <Route exact path='/profile' component={Profile} />
+          <Route exact path='/portfolio' component={Portfolio} />
+          <Route exact path='/project-request' component={ProjectRequest} />
+          <Route exact path='/apply-for-job' component={ApplyForEmployment} />
         </Switch>
         {/* <HomeBanner />
         <Contact />

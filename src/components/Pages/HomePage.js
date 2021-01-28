@@ -1,6 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import programmingSVG from '../../images/programming.svg';
 import DeliveryPromo from '../StaticPages/DeliveryPromo';
+import Divider from './Divider';
 import Footer from './Footer';
 import Team from './Team';
 const HomePage = () => {
@@ -14,8 +17,8 @@ const HomePage = () => {
                 <div className='lg:grid lg:grid-cols-2 lg:gap-8'>
                   <div className='mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center'>
                     <div className='lg:py-24'>
-                      <a
-                        href='/'
+                      <Link
+                        to='/apply-for-job'
                         className='inline-flex items-center text-white bg-black rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200'>
                         <span className='px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-indigo-500 rounded-full'>
                           We're hiring
@@ -36,7 +39,7 @@ const HomePage = () => {
                             clip-rule='evenodd'
                           />
                         </svg>
-                      </a>
+                      </Link>
                       <h1 className='mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl'>
                         <span className='block'>A better way to</span>
                         <span className='block text-indigo-400'>
@@ -172,12 +175,12 @@ const HomePage = () => {
       </div>
       {/* Section 3 */}
       <section class='py-12 px-4 text-center'>
+        <Divider />
         <h2 class='text-4xl mb-2 leading-tight font-semibold font-heading'>
-          How to get Dunder Mifflined?
+          Our Services
         </h2>
-        <p class='text-gray-400'>
-          Let’s open a new chapter of your paper adventure!
-        </p>
+        <p class='text-gray-400'>Below are our services we delivery</p>
+        <Divider />
         <div class='flex flex-wrap items-center -mx-8 mt-12 mb-2'>
           <div class='lg:w-1/3 px-8 mb-8'>
             <img class='w-1/2 mx-auto mb-8 h-32' src={programmingSVG} alt='' />
@@ -185,12 +188,13 @@ const HomePage = () => {
               <span class='inline-flex items-center justify-center h-12 w-12 mr-2 border rounded-full'>
                 1
               </span>
-              <span>Contact our Sales</span>
+              <span>Web App Development</span>
             </h3>
             <p class='text-gray-400'>
               During the phone call we will be able to present you all details
               of cooperation, pricing and special offers, suited for your
-              company.
+              company.{' '}
+              <span class='text-blue-800 cursor-pointer'>Read more</span>
             </p>
           </div>
           <div class='lg:w-1/3 px-8 mb-8'>
@@ -199,7 +203,7 @@ const HomePage = () => {
               <span class='inline-flex items-center justify-center h-12 w-12 mr-2 border rounded-full'>
                 2
               </span>
-              <span>Sign the documents</span>
+              <span>Mobile App Development</span>
             </h3>
             <p class='text-gray-400'>
               We can also talk during business meeting, or visit your office
@@ -212,7 +216,50 @@ const HomePage = () => {
               <span class='inline-flex items-center justify-center h-12 w-12 mr-2 border rounded-full'>
                 3
               </span>
-              <span>Wait for delivery!</span>
+              <span>Graphic Design</span>
+            </h3>
+            <p class='text-gray-400'>
+              You don’t buy a pig... or shall I say a paper in a poke. The
+              supplies will be delivered to your company every first Monday of
+              the month.
+            </p>
+          </div>
+
+          <div class='lg:w-1/3 px-8 mb-8'>
+            <img class='w-1/2 mx-auto mb-8 h-32' src={programmingSVG} alt='' />
+            <h3 class='text-2xl mb-4 font-semibold font-heading'>
+              <span class='inline-flex items-center justify-center h-12 w-12 mr-2 border rounded-full'>
+                4
+              </span>
+              <span>Online Training</span>
+            </h3>
+            <p class='text-gray-400'>
+              You don’t buy a pig... or shall I say a paper in a poke. The
+              supplies will be delivered to your company every first Monday of
+              the month.
+            </p>
+          </div>
+          <div class='lg:w-1/3 px-8 mb-8'>
+            <img class='w-1/2 mx-auto mb-8 h-32' src={programmingSVG} alt='' />
+            <h3 class='text-2xl mb-4 font-semibold font-heading'>
+              <span class='inline-flex items-center justify-center h-12 w-12 mr-2 border rounded-full'>
+                6
+              </span>
+              <span>Video Marketing</span>
+            </h3>
+            <p class='text-gray-400'>
+              You don’t buy a pig... or shall I say a paper in a poke. The
+              supplies will be delivered to your company every first Monday of
+              the month.
+            </p>
+          </div>
+          <div class='lg:w-1/3 px-8 mb-8'>
+            <img class='w-1/2 mx-auto mb-8 h-32' src={programmingSVG} alt='' />
+            <h3 class='text-2xl mb-4 font-semibold font-heading'>
+              <span class='inline-flex items-center justify-center h-12 w-12 mr-2 border rounded-full'>
+                6
+              </span>
+              <span>Social Media Marketing</span>
             </h3>
             <p class='text-gray-400'>
               You don’t buy a pig... or shall I say a paper in a poke. The
